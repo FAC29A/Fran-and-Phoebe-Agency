@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+nav {
+    position: fixed;
+    background-color:#f0f8ff;
+    width: 100vw;
+}
+
+#home {
+    background-color: #aedefe;
+}
+
+#about {
+    background-color: #fbf46e;
+}
+
+#theTeam {
+    background-color: #fbd5d0;
+}
+
+#contact {
+    background-color: #df93fd;
+}
