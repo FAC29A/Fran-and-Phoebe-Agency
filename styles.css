@@ -1,11 +1,26 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+html{
+    font-size: 16px;
+    
 }
 
-/* Circus fonts
-font-family: 'Ewert', cursive;
-font-family: 'Rye', cursive; */
+* {
+    font-family: 'Rye', cursive;
+    color:#430100; 
+}
+
+body {
+    margin: 0;
+    background-color: #fdf3e0;
+}
+
+/* font-family: 'Ewert', cursive; */
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
 
 section {
     height: 100vh;
@@ -27,25 +42,16 @@ nav {
 
 nav a{
     text-decoration: none;
-    color: white;
     padding: 10px;
+    font-family: 'Rye', cursive;
+    font-size: 1.5rem;
 }
 
 nav img{
     width: 100px;
 }
-#home {
-    background-color: #aedefe;
-}
-
-#about {
-    background-color: #fbf46e;
-}
 
 /* The team section */
-#theTeam {
-    background-color: #ffe8bc;
-}
 
 .center{
     margin-left: auto;
@@ -76,6 +82,3 @@ nav img{
     max-width: 200px;
 }
 
-#contact {
-    background-color: #df93fd;
-}
