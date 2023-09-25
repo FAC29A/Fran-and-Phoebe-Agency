@@ -3,13 +3,14 @@ body {
     font-family: Arial, sans-serif;
 }
 
+
 section {
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: white;
+    padding-top: 60px;
+    text-align: center;
 }
+
 nav {
     position: fixed;
     background-color:#f0f8ff;
@@ -24,8 +25,38 @@ nav {
     background-color: #fbf46e;
 }
 
+/* The team section */
 #theTeam {
-    background-color: #fbd5d0;
+    background-color: #ffe8bc;
+}
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.team-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    max-height: 80vh;
+    max-width: 60vw;
+    grid-gap: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.team-grid-container img{
+    width: 200px;
+    max-height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.member-text{
+    background-color: #430100;
+    border-radius: 10px;
+    max-width: 200px;
 }
 
 #contact {
