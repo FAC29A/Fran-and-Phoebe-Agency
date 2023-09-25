@@ -3,6 +3,9 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* Circus fonts
+font-family: 'Ewert', cursive;
+font-family: 'Rye', cursive; */
 
 section {
     height: 100vh;
@@ -12,11 +15,25 @@ section {
 }
 
 nav {
+    display: flex;
     position: fixed;
-    background-color:#f0f8ff;
-    width: 100vw;
+    width: 98vw;
+    justify-content: space-between;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+
 }
 
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+nav img{
+    width: 100px;
+}
 #home {
     background-color: #aedefe;
 }
