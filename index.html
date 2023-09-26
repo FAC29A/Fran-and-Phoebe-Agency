@@ -69,7 +69,32 @@ rel="stylesheet">
             </div>
             <div class="flex-col">
                 <div>
-                    Form
+                    <form action="https://learn-forms.netlify.com/submit/part3" class="stack-md">
+                        <label for="name">Name:</label>
+                        <input type="name" id="name" name="name">
+                        <br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+                        <br>
+                        <label for="message">Message:</label>
+                        <input type="text" id="message" name="message">
+                        <br><br>
+                        <label for="enquiryPurpose">Nature of your enquiry:</label>
+                        <br>
+                            <input type="radio" id="enquiryChoice1" name="enquiry" value="seeking-representation" />
+                            <label for="enquiryChoice1">Seeking representation</label>
+                            <br>
+                            <input type="radio" id="enquiryChoice2" name="enquiry" value="performer-enquiry" />
+                            <label for="enquiryChoice2">Enquiring about one of our performers</label>
+                            <br>
+                            <input type="radio" id="enquiryChoice3" name="enquiry" value="partnership-enquiry" />
+                            <label for="enquiryChoice3">Looking to partner with us</label>
+                            <br>
+                            <input type="radio" id="enquiryChoice3" name="enquiry" value="other-enquiry" />
+                            <label for="enquiryChoice3">Other</label>
+                            <br>
+                        <button type="submit">Submit</button>
+                       </form>
                 </div>
             </div>
         </div>

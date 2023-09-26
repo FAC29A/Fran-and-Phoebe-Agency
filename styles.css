@@ -14,6 +14,16 @@
     flex: 1;
 }
 
+.stack-lg > *+* {
+    margin-top: 2rem;
+}
+.stack-md > *+* {
+margin-top: 1rem;
+}
+.stack-sm > *+* {
+margin-top: 0.5rem;
+}
+
 * {
     font-family: 'Rye', cursive;
     color:#430100; 
