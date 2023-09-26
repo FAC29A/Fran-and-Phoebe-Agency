@@ -1,12 +1,22 @@
-html {
-    font-size: 16px;
+
+* {
+    font-family: 'Rye', cursive;
+    color:#430100; 
 }
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    background-color: #fdf3e0;
 }
 
+/* font-family: 'Ewert', cursive; */
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
 
 section {
     height: 100vh;
@@ -16,23 +26,28 @@ section {
 }
 
 nav {
+    display: flex;
     position: fixed;
-    background-color:#f0f8ff;
-    width: 100vw;
+    width: 98vw;
+    justify-content: space-between;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+
 }
 
-#home {
-    background-color: #aedefe;
+nav a{
+    text-decoration: none;
+    padding: 10px;
+    font-family: 'Rye', cursive;
+    font-size: 1.5rem;
 }
 
-#about {
-    background-color: #fbf46e;
+nav img{
+    width: 100px;
 }
 
 /* The team section */
-#theTeam {
-    background-color: #ffe8bc;
-}
 
 .center{
     margin-left: auto;
@@ -64,6 +79,3 @@ nav {
     max-width: 10.5rem;
 }
 
-#contact {
-    background-color: #df93fd;
-}
