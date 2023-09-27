@@ -69,15 +69,15 @@ rel="stylesheet">
             </div>
             <div class="flex-col">
                 <div>
-                    <form action="https://learn-forms.netlify.com/submit/part3" class="stack-md">
+                    <form action="https://learn-forms.netlify.com/submit/part3" class="stack-md" id="myForm">
                         <label for="name">Name:</label>
-                        <input type="name" id="name" name="name">
+                        <input type="name" id="name" name="name" required>
                         <br>
                         <label for="email">Email:</label>
-                        <input type="email" id="email" name="email">
+                        <input type="email" id="email" name="email" required>
                         <br>
                         <label for="message">Message:</label>
-                        <input type="text" id="message" name="message">
+                        <input type="text" id="message" name="message" required>
                         <br><br>
                         <label for="enquiryPurpose">Nature of your enquiry:</label>
                         <br>
@@ -93,6 +93,7 @@ rel="stylesheet">
                             <input type="radio" id="enquiryChoice3" name="enquiry" value="other-enquiry" />
                             <label for="enquiryChoice3">Other</label>
                             <br>
+                            <p id="enquiryMessage">Please select the nature of your enquiry.</p>
                         <button type="submit">Submit</button>
                        </form>
                 </div>

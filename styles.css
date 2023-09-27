@@ -104,3 +104,9 @@ nav img{
     max-width: 10.5rem;
 }
 
+/* Contact page */
+
+#enquiryMessage {
+    display: none;
+    color: #cc2424;
+}
