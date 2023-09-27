@@ -25,6 +25,10 @@ html {
     text-align: center;
 }
 
+.light {
+    color: #fdf3e0;
+}
+
 
 .stack-lg > *+* {
     margin-top: 2rem;
@@ -121,8 +125,14 @@ nav img{
     border-radius: 0.8rem;
 }
 
-.member-text{
-    color: #fdf3e0
+.member-name {
+    margin-bottom: 5px;
+}
+
+.member-role {
+    opacity: 80%;
+    font-size: 14px;
+    margin-top: 5px;
 }
 
 /* Contact page */
