@@ -64,6 +64,8 @@ section {
     text-align: center;
 }
 
+/* Nav section */
+
 nav {
     display: flex;
     position: fixed;
@@ -77,13 +79,17 @@ nav {
 
 nav a{
     text-decoration: none;
-    padding: 10px;
+    padding-right: 30px; 
     font-family: 'Rye', cursive;
     font-size: 1.5rem;
 }
 
+nav a:focus{
+    border: #430100;
+}
+
 nav img{
-    width: 100px;
+    width: 150px;
 }
 
 /* The team section */
