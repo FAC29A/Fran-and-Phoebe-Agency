@@ -116,7 +116,17 @@ nav img{
 }
 
 .member-text{
-    color: #fdf3e0;
+
+    background-color: #430100;
+    border-radius: 10px;
+    max-width: 10.5rem;
+}
+
+/* Contact page */
+
+#enquiryMessage {
+    display: none;
+    color: #cc2424;
 }
 
 @media only screen and (max-width: 530px){
