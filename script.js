@@ -30,3 +30,37 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
+  // create member cards
+
+function createMemberCard(img,fullName,role,quote) {
+
+  const cardContainer = document.getElementById('cardContainer');
+
+  const memberImage = document.createElement('img');
+  memberImage.setAttribute('src', img);
+  const memberName = document.createElement('p');
+  memberName.innerHTML= fullName;
+  const memberRole = document.createElement('p');
+  memberRole.innerHTML= role;
+  const memberQuote = document.createElement('q');
+  memberQuote.innerHTML= quote;
+
+  cardContainer.append(memberImage,memberName,memberRole,memberQuote);
+
+}
+
+createMemberCard('./images/bearded-man.jpeg', 'John Beard', 'Head of Talent Acquisiton', 'A diligent worker, especially at Christmas')
+
+// const members = [
+//   {
+//     img: './images/bearded-man.jpeg',
+//     fullName:'John Beard',
+//     role: 'Head of Talent Acquisition',
+//     quote: 'A diligent worker, especially at Christmas'
+//   }
+// ]
+
+// for (member in members) {
+
+// }
+
