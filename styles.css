@@ -169,6 +169,15 @@ nav img{
     margin-top: 5px;
 }
 
+.hover-appear {
+    opacity: 20%;
+    transition: 250ms all ease-in-out;
+}
+
+.hover-appear:hover {
+    opacity: 100%;
+}
+
 /* Contact page */
 
 #enquiryMessage {

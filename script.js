@@ -67,7 +67,7 @@ function createMemberCard(img, alt, fullName,role,quote) {
   memberRole.className = "light member-role";
   const memberQuote = document.createElement('q');
   memberQuote.innerHTML= quote;
-  memberQuote.className = "light member-role";
+  memberQuote.className = "light member-role hover-appear";
   //append each part of the card to the card
   memberCard.append(memberImage,memberName,memberRole,memberQuote);
 
