@@ -176,7 +176,14 @@ nav img{
     color: var(--red)
 }
 
-@media (max-width: 530px){
+
+fieldset {
+    max-width: 25rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (max-width: 530px){
     .team-grid-container {
         display: block;
         max-height: 80vh;
