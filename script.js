@@ -10,6 +10,17 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+//enter button scrolling:
+  document.addEventListener('DOMContentLoaded', function() {
+  const enter = document.getElementById('enter');
+
+  enter.addEventListener('click', (e) => {
+          e.preventDefault();
+          const targetSection2 = document.getElementById('about');
+          targetSection2.scrollIntoView({ behavior: 'smooth' });
+      });
+    })
+
 
 //form validation
   const myForm = document.getElementById("myForm");
@@ -32,7 +43,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // create member cards
 // container for all the cards
-const cardContainer = document.getElementById('team-grid-container');
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Your JavaScript code here
+  const cardContainer = document.getElementById('team-grid-container');
+  
+  // Define the createMemberCard function and the 'members' array here
+  
+ 
 
 //this creates 1 card
 function createMemberCard(img, alt, fullName,role,quote) {
@@ -59,10 +77,10 @@ function createMemberCard(img, alt, fullName,role,quote) {
 
 const members = [
   {
-    img: './images/bearded-man.jpeg',
-    alt: "Black and white image of an old man sitting on a wooden chair with a very long, braided beard.",
-    fullName:'John Beard',
-    role: 'Head of Talent Acquisition',
+    img: "./images/woman-scales.jpeg",
+    alt: "A black and white image of a woman dressed as a pair of silver balance scales", 
+    fullName: "Belinda Scales",
+    role:'CEO',
     quote: 'A diligent worker, especially at Christmas'
   },
   {
@@ -93,17 +111,23 @@ const members = [
     role:'Head of Communications',
     quote: 'A diligent worker, especially at Christmas'
   },
+  
   {
-    img: "./images/woman-scales.jpeg",
-    alt: "A black and white image of a woman dressed as a pair of silver balance scales", 
-    fullName: "Belinda Scales",
-    role:'CEO',
+    img: './images/bearded-man.jpeg',
+    alt: "Black and white image of an old man sitting on a wooden chair with a very long, braided beard.",
+    fullName:'John Beard',
+    role: 'Head of Talent Acquisition',
     quote: 'A diligent worker, especially at Christmas'
-  }
+  },
 
 ];
 
 for (const member of members) {
   createMemberCard(member.img, member.alt, member.fullName, member.role, member.quote);
 }
+});
+
+// for (const member of members) {
+//   createMemberCard(member.img, member.alt, member.fullName, member.role, member.quote);
+// }
 
