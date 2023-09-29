@@ -1,9 +1,25 @@
 :root {
-    --dark: #430100;
+    --extra-light:#fdfbf2; 
+    --light: #fdf3e0;
+    --mid-light: #ded5c4;
+    --medium: #c9b99c;
+    --red: #cc2424;
+    --dark-grey: #414040; 
+    --dark-red: #430100;
+    --green: #506C60;
+    --dark-green: #183525;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-html{
-    font-size:16px;
+* {
+    font-family: 'Rye', cursive;
+    
+}
+
+body {
+    margin: 0;
 }
 
 /* Utility Classes */
@@ -27,34 +43,23 @@ html{
 }
 
 .light {
-    color: #fdf3e0;
+    color: var(--light);
 }
-
 
 .stack-lg > *+* {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 .stack-md > *+* {
-margin-top: 1rem;
+  margin-top: 1rem;
 }
 .stack-sm > *+* {
-margin-top: 0.5rem;
-}
-
-* {
-    font-family: 'Rye', cursive;
-    color:#430100; 
-}
-
-body {
-    margin: 0;
-    background-color: #fdf3e0;
+  margin-top: 0.5rem;
 }
 
 /* font-family: 'Ewert', cursive; */
 h1 {
     font-size: 6rem;
-    color: white;
+    color: var(--light);
     margin-top: 50px;
 }
 
@@ -71,9 +76,10 @@ h3 {
 }
 section {
     height: 100vh;
-    color: white;
+    color: (--light);
     padding-top: 50px;
     text-align: center;
+    background-image: linear-gradient(var(--dark-grey), var(--medium), var(--mid-light),   var(--light), var(--extra-light));
 }
 /* Home */
 
@@ -84,7 +90,7 @@ section {
 
 .heading-intro {
     font-size: 3rem;
-    color: white;
+    color: var(--extra-light);
     padding-top: 200px;
     opacity: 80%;
 }
@@ -103,7 +109,7 @@ nav {
 }
 
 nav a{
-    color: white;
+    color: var(--extra-light);
     text-decoration: none;
     padding-right: 30px; 
     font-family: 'Rye', cursive;
@@ -111,7 +117,7 @@ nav a{
 }
 
 nav a:focus{
-    border: white;
+    border: var(--extra-light);
 }
 
 nav a:hover {
@@ -126,30 +132,28 @@ nav img{
 
 
 /* The team section */
-
-
 .team-grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     grid-template-rows: 1fr 1fr;
     max-height: 80vh;
-    max-width: 50rem;
+    max-width: 70rem;
     grid-gap: 1rem;
     margin-left: auto;
     margin-right: auto;
 }
 
-
 .team-member {
-    background-color: #430100;
-    width: 15rem;
+    background-color: var(--dark-red);
+    width: 16rem;
+    height: 19rem;
     border-radius: 0.8rem;
-    padding-top: 1rem;
+    padding: 1rem;
 }
 
 .team-grid-container img{
     max-width: 10.5rem;
-    max-height: 15rem;
+    max-height: 13rem;
     overflow: hidden;
     border-radius: 0.8rem;
 }
@@ -169,10 +173,10 @@ nav img{
 
 #enquiryMessage {
     display: none;
-    color: #cc2424;
+    color: var(--red)
 }
 
-@media only screen and (max-width: 530px){
+@media (max-width: 530px){
     .team-grid-container {
         display: block;
         max-height: 80vh;
@@ -181,5 +185,36 @@ nav img{
         margin-left: auto;
         margin-right: auto;
         overflow: scroll;
+    }
+
+    .team-member {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-height: 820px){
+    .team-member {
+        width: 13rem;
+        height: 16rem;
+        border-radius: 0.8rem;
+        font-size: 0.8rem;
+    }
+    
+    .team-grid-container img{
+        max-width: 8rem;
+        max-height: 10rem;
+        overflow: hidden;
+        border-radius: 0.8rem;
+    }
+    .team-grid-container {
+        overflow: scroll;
+    }
+
+}
+
+@media (min-width: 1000px){
+    .team-grid-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
     }
 }
