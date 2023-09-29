@@ -100,18 +100,20 @@ section {
 nav {
     display: flex;
     position: fixed;
-    width: 98vw;
+    width: 100vw;
     justify-content: space-between;
     padding-right: 10px;
     padding-left: 10px;
-    /* padding-top: 5px; */
+    padding-top: 30px;
+    padding-bottom: 20px;
     z-index: 1;
+    background-color: var(--dark-red);
 }
 
 nav a{
     color: var(--extra-light);
     text-decoration: none;
-    padding-right: 30px; 
+    padding-right: 40px; 
     font-family: 'Rye', cursive;
     font-size: 1.5rem;
 }
