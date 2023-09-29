@@ -81,35 +81,35 @@ const members = [
     alt: "A black and white image of a woman dressed as a pair of silver balance scales", 
     fullName: "Belinda Scales",
     role:'CEO',
-    quote: 'A diligent worker, especially at Christmas'
+    quote: 'Always scaling up'
   },
   {
     img: "./images/chicken-man.jpeg",
     alt: "Black and white image of a man dressed as a hen.",
     fullName: "Ed Hendrix",
     role: "Account Manager",
-    quote: 'A diligent worker, especially at Christmas'
+    quote: 'Helping you develop your own little nest-egg'
   },
   {
     img: "./images/egg-lady.jpeg",
     alt: "Black and white image of a woman encased in an egg costume sitting on a wall",
     fullName: "Susie Wall",
     role: "Office Manager",
-    quote: 'A diligent worker, especially at Christmas'
+    quote: 'Keeping the office sunny-side updated'
   },
   {
     img: "./images/man-crocodile.jpeg",
     alt: "Black and white image of a man in a swimming costume holding a crocodile in the air with one arm.",
-    fullName:  "Albert Strong", 
+    fullName:  "Albert Gator", 
     role:'Compliance Officer',
-    quote: 'A diligent worker, especially at Christmas'
+    quote: 'See you later!'
   },
   {
     img: "./images/mushroom-woman.jpeg",
     alt: "Black and white image of a woman standing under a giant spotted mushroom. She has flowers in her hair." ,
     fullName: "Edna Shroom", 
     role:'Head of Communications',
-    quote: 'A diligent worker, especially at Christmas'
+    quote: 'Our competitors are complete shitake!'
   },
   
   {
