@@ -100,7 +100,7 @@ section {
 nav {
     display: flex;
     position: fixed;
-    width: 100vw;
+    width: 98vw;
     justify-content: space-between;
     padding-right: 10px;
     padding-left: 10px;
@@ -195,6 +195,23 @@ fieldset {
 }
 
 @media only screen and (max-width: 530px){
+    nav a{
+        font-size: 1rem;
+    }
+
+    .heading-intro {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+        margin-top: 20px;
+    }
+    
+    .enter {
+        font-size: 1.5rem;
+    }
+    
     .team-grid-container {
         display: block;
         max-height: 80vh;
@@ -208,9 +225,38 @@ fieldset {
     .team-member {
         margin-bottom: 1rem;
     }
+
+}
+
+@media (max-width: 750px) {
+    .small-screen-invisible {
+        display: none;
+    }
+}
+
+@media (max-width: 900px) and (min-width: 530px) {
+    nav a{
+        font-size: 1.5rem;
+    }
+
+    .heading-intro {
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+        margin-top: 20px;
+    }
+    
+    .enter {
+        font-size: 2rem;
+    }
 }
 
 @media (max-height: 820px){
+
+    
+
     .team-member {
         width: 13rem;
         height: 16rem;
