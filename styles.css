@@ -167,6 +167,12 @@ nav img{
     color: #cc2424;
 }
 
+fieldset {
+    max-width: 25rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 @media only screen and (max-width: 530px){
     .team-grid-container {
         display: block;
