@@ -69,6 +69,11 @@ h2 {
 h3 {
     font-size: 1.5rem;
 }
+.enter {
+    width: 10rem;
+    height: 3rem;
+    font-size: 2rem;
+}
 section {
     height: 100vh;
     color: (--light);
