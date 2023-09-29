@@ -10,6 +10,17 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+//enter button scrolling:
+  document.addEventListener('DOMContentLoaded', function() {
+  const enter = document.getElementById('enter');
+
+  enter.addEventListener('click', (e) => {
+          e.preventDefault();
+          const targetSection2 = document.getElementById('about');
+          targetSection2.scrollIntoView({ behavior: 'smooth' });
+      });
+    })
+
 
 //form validation
   const myForm = document.getElementById("myForm");
