@@ -7,7 +7,8 @@
     --dark-grey: #414040; 
     --dark-red: #430100;
     --green: #506C60;
-    --dark-green: #183525;
+    --dark-green-clear: rgba(17, 37, 26, 0.6);
+    --dark-green-solid: rgba(17, 37, 26);
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -107,14 +108,17 @@ section {
 nav {
     display: flex;
     position: fixed;
-    width: 98vw;
+    width: 100vw;
     justify-content: space-between;
+    align-items: flex-end;
     padding-right: 10px;
     padding-left: 10px;
-    padding-top: 30px;
-    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 2px;
     z-index: 1;
-    background-color: var(--dark-red);
+    background-color: var(--dark-green-clear);
+    border-bottom: var(--dark-green-solid) solid 1px;
+    
 }
 
 nav a{
