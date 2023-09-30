@@ -81,6 +81,13 @@ section {
     text-align: center;
     background-image: linear-gradient(var(--dark-grey), var(--medium), var(--mid-light),   var(--light), var(--extra-light));
 }
+
+.full-para {
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: left;
+
+}
 /* Home */
 
 #home {
@@ -131,6 +138,9 @@ nav img{
     width: 150px;
     padding-left: 20px;
 }
+
+/* About Section */
+
 
 
 /* The team section */
