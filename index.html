@@ -16,7 +16,7 @@
 <body>
    <main> 
       <nav>
-        <a href="#home"><img src="./images/strange-logo.png" alt="Strange Talents Logo" class="small-screen-invisible"></a>
+        <a href="#home"><img src="./images/strange-logo.png" alt="Strange Talents Logo, click for home page" class="small-screen-invisible"></a>
         <div class="nav-links">
             <a href="#about">About</a>
             <a href="#theTeam">The Team</a>
@@ -26,7 +26,7 @@
     <section id="home"> 
     <div class="heading-intro">Enter the wonderful world of </div>
         <h1>STRANGE Talents</h1>
-        <a href="#about" ><button class="enter" id="enter">Enter</button></a>
+        <button class="enter" id="enter"><a href="#about" >Enter</a></button>
     </section>
     
     <section id="about">
@@ -46,7 +46,7 @@
             </p>
         
         
-        <img src="./images/womanClown.png" class="background-image">
+        <img src="./images/womanClown.png" class="background-image" alt="Woman dressed in a clown jumpsuit">
     </section>
 
     <section id="theTeam">
@@ -82,7 +82,7 @@
                 <div>
                     <form class="stack-md" id="myForm">
                         <label for="name">Name:</label>
-                        <input type="name" id="name" name="name" required>
+                        <input type="text" id="name" name="name" required>
                         <br>
                         <label for="email">Email:</label>
                         <input type="email" id="email" name="email" required>
@@ -93,19 +93,18 @@
                         <fieldset class="stack-sm">
                           <legend>Nature of your enquiry:</legend> 
                           <br>
-                            <input type="radio" id="enquiryChoice1" name="enquiry" value="seeking-representation" />
+                            <input type="radio" id="enquiryChoice1" name="enquiry" value="seeking-representation">
                             <label for="enquiryChoice1">Seeking representation</label>
                             <br>
-                            <input type="radio" id="enquiryChoice2" name="enquiry" value="performer-enquiry" />
+                            <input type="radio" id="enquiryChoice2" name="enquiry" value="performer-enquiry">
                             <label for="enquiryChoice2">Enquiring about one of our performers</label>
                             <br>
-                            <input type="radio" id="enquiryChoice3" name="enquiry" value="partnership-enquiry" />
+                            <input type="radio" id="enquiryChoice3" name="enquiry" value="partnership-enquiry">
                             <label for="enquiryChoice3">Looking to partner with us</label>
                             <br>
-                            <input type="radio" id="enquiryChoice3" name="enquiry" value="other-enquiry" />
-                            <label for="enquiryChoice3">Other</label>
+                            <input type="radio" id="enquiryChoice4" name="enquiry" value="other-enquiry">
+                            <label for="enquiryChoice4">Other</label>
                             <p id="enquiryMessage">Please select the nature of your enquiry.</p>
-
                         </fieldset>
                             <br>
                         <button type="submit">Submit</button>
@@ -115,6 +114,9 @@
         </div>
     </section>
 </main>
+<footer>
+    
+</footer>
 
     <script src="script.js"></script>
 </body>
