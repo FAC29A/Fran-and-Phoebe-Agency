@@ -201,7 +201,7 @@ nav img{
 }
 
 .team-member {
-    background-color: var(--dark-green-solid);
+    background-color: var(--dark-red);
     width: 16rem;
     height: 19rem;
     border-radius: 0.8rem;
