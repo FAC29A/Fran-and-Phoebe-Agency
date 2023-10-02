@@ -253,12 +253,22 @@ fieldset {
     .team-member {
         margin-bottom: 1rem;
     }
+    iframe {
+        max-width: 80%;
+    }
 
+    .flex-row {
+        display: block;
+        overflow: scroll;
+    }
 }
 
 @media (max-width: 750px) {
     .small-screen-invisible {
         display: none;
+    }
+    iframe {
+        max-width: 80%;
     }
 }
 
@@ -279,11 +289,15 @@ fieldset {
     .enter {
         font-size: 2rem;
     }
+    .team-grid-container {
+        overflow: scroll;
+    }
+    iframe {
+        max-width: 80%;
+    }
 }
 
 @media (max-height: 820px){
-
-    
 
     .team-member {
         width: 13rem;
