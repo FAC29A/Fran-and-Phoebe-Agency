@@ -47,6 +47,10 @@ body {
     color: var(--light);
 }
 
+.body-font {
+    font-family: 'Lora', serif;
+}
+
 .stack-lg > *+* {
   margin-top: 2rem;
 }
@@ -87,9 +91,11 @@ section {
     padding-right: 30px;
     text-align: left;
     width: 80vw;
+    font-family: 'Lora', serif;
     /* margin-left: auto;
     margin-right: auto; */
 }
+
 /* Home */
 
 #home {
@@ -102,6 +108,7 @@ section {
     color: var(--extra-light);
     padding-top: 200px;
     opacity: 80%;
+    font-family: 'Lora', serif;
 }
 
 /* Nav section */
@@ -202,6 +209,10 @@ nav img{
     margin-top: 5px;
 }
 
+.member-quote {
+    font-family: 'Lora', serif;
+}
+
 .hover-appear {
     opacity: 20%;
     transition: 250ms all ease-in-out;
@@ -213,11 +224,18 @@ nav img{
 
 /* Contact page */
 
+.contact-details {
+    font-family: 'Lora', serif;
+}
+
 #enquiryMessage {
     display: none;
     color: var(--red)
 }
 
+label, input {
+    font-family: 'Lora', serif;
+}
 
 fieldset {
     max-width: 25rem;
