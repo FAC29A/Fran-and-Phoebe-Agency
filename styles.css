@@ -264,7 +264,8 @@ footer {
     padding-left: 20px;
 }
 
-@media only screen and (max-width: 530px){
+/* Smallest screens */
+@media only screen and (max-width: 529px){
     nav a{
         font-size: 1rem;
     }
@@ -289,7 +290,7 @@ footer {
         grid-gap: 1rem;
         margin-left: auto;
         margin-right: auto;
-        overflow: scroll;
+        /* overflow: scroll; */
     }
 
     .team-member {
@@ -301,20 +302,40 @@ footer {
 
     .flex-row {
         display: block;
+        /* overflow: scroll; */
+    }
+    .about-text{
+      font-size: 1.1rem;
+    }
+   
+    section {
         overflow: scroll;
     }
-}
-
-@media (max-width: 750px) {
     .small-screen-invisible {
         display: none;
     }
+    .background-image {
+        left: 0;
+        width: 100%; 
+        height: auto;
+    }
+    
+}
+
+/* @media (max-width: 750px) {
     iframe {
         max-width: 80%;
     }
-}
+    .small-screen-invisible {
+        display: none;
+    }
+} */
 
+/* mid-small screens */
 @media (max-width: 900px) and (min-width: 530px) {
+    section {
+        overflow: scroll;
+    }
     nav a{
         font-size: 1.5rem;
     }
@@ -331,16 +352,25 @@ footer {
     .enter {
         font-size: 2rem;
     }
-    .team-grid-container {
-        overflow: scroll;
-    }
+
     iframe {
         max-width: 80%;
     }
+    .small-screen-invisible {
+        display: none;
+    }
+    
+    .about-text{
+        font-size: 1.1rem;
+      }
+
 }
 
+/* Shallow containers */
 @media (max-height: 820px){
-
+    section {
+        overflow: scroll;
+    }
     .team-member {
         width: 13rem;
         height: 16rem;
@@ -354,12 +384,15 @@ footer {
         overflow: hidden;
         border-radius: 0.8rem;
     }
-    .team-grid-container {
-        overflow: scroll;
+    
+    .about-text {
+        font-size: 1.2rem;
+        
     }
 
 }
 
+/* large screens */
 @media (min-width: 1000px){
     .team-grid-container {
         grid-template-columns: 1fr 1fr 1fr;
