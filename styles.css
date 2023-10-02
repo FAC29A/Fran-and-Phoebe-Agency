@@ -75,6 +75,9 @@ h3 {
     height: 3rem;
     font-size: 2rem;
 }
+.enter:hover {
+    cursor: pointer;
+}
 section {
     height: 100vh;
     color: (--light);
