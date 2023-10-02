@@ -16,7 +16,7 @@
 <body>
    <main> 
       <nav>
-        <a href="#home"><img src="./images/strange-logo.png" alt="Strange Talents Logo" class="small-screen-invisible"></a>
+        <a href="#home"><img src="./images/strange-logo.png" alt="Strange Talents Logo, click for home page" class="small-screen-invisible"></a>
         <div class="nav-links">
             <a href="#about">About</a>
             <a href="#theTeam">The Team</a>
@@ -26,29 +26,27 @@
     <section id="home"> 
     <div class="heading-intro">Enter the wonderful world of </div>
         <h1>STRANGE Talents</h1>
-
         <button class="enter" id="enter"><a href="#about" class="button-link">Enter</a></button>
-
     </section>
     
     <section id="about">
         <h2>About Us</h2>
         
             <p class="stack-md full-para about-text">
-                🎩✨ Welcome to the most extraordinary talent agency on the planet! 🌍 At STRANGE Talents, we proudly represent the marvels of the uncommon, the masters of the peculiar, and the virtuosos of the bizarre. 
+                🎩✨ Welcome to the most extraordinary of all talent agencies! At Strange Talents, we proudly represent the marvels of the uncommon, the masters of the peculiar, and the virtuosos of the bizarre. 
             </p>
             <p class="stack-md full-para about-text">            
                 Our founders Edna and Belinda opened their doors in 2012, both bringing their own unique talents; Belinda's measured approach counterabalances Edna's boundless ability to see all the world has to offer and along with their immaculate staff, the service they bring is unparalleled.
             </p>
             <p class="stack-md full-para about-text">            
-                Our roster includes individuals fluent in the enchanting tongue of Elvish, daredevils wielding beards as lassos, and the enigmatic souls defying gravity, walking on fingernails alone.
+                Our roster includes individuals fluent in the enchanting tongue of Elvish, daredevils wielding beards as lassos, and enigmatic souls defying gravity, walking on fingernails alone.
             </p>
             <p class="stack-md full-para about-text">
-                We are the purveyors of the outlandish, the champions of the wonderfully weird, and the gatekeepers to a realm where the extraordinary is expected.
+                We are the purveyors of the outlandish, the champions of the wonderfully weird, and the gatekeepers to a realm where the extraordinary is to be expected.
             </p>
         
         
-        <img src="./images/womanClown.png" class="background-image">
+        <img src="./images/womanClown.png" class="background-image" alt="null">
     </section>
 
     <section id="theTeam">
@@ -64,7 +62,7 @@
                     <p class="body-font">Where to find us:</p>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13323.719589719185!2d-0.1256465080077805!3d51.52227374835531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b48457cd92b%3A0x96023f9b959bc42!2sStrange%20Hill!5e0!3m2!1sen!2suk!4v1695754592301!5m2!1sen!2suk" 
                     width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade">
+                    referrerpolicy="no-referrer-when-downgrade" alt="Location map">
                     </iframe>
                     <p class="body-font">Strange Hill,<br>
                        London,<br>
@@ -84,7 +82,7 @@
                 <div>
                     <form class="stack-md" id="myForm">
                         <label for="name">Name:</label>
-                        <input type="name" id="name" name="name" required>
+                        <input type="text" id="name" name="name" required>
                         <br>
                         <label for="email">Email:</label>
                         <input type="email" id="email" name="email" required>
@@ -95,19 +93,18 @@
                         <fieldset class="stack-sm">
                           <legend>Nature of your enquiry:</legend> 
                           <br>
-                            <input type="radio" id="enquiryChoice1" name="enquiry" value="seeking-representation" />
+                            <input type="radio" id="enquiryChoice1" name="enquiry" value="seeking-representation">
                             <label for="enquiryChoice1">Seeking representation</label>
                             <br>
-                            <input type="radio" id="enquiryChoice2" name="enquiry" value="performer-enquiry" />
+                            <input type="radio" id="enquiryChoice2" name="enquiry" value="performer-enquiry">
                             <label for="enquiryChoice2">Enquiring about one of our performers</label>
                             <br>
-                            <input type="radio" id="enquiryChoice3" name="enquiry" value="partnership-enquiry" />
+                            <input type="radio" id="enquiryChoice3" name="enquiry" value="partnership-enquiry">
                             <label for="enquiryChoice3">Looking to partner with us</label>
                             <br>
-                            <input type="radio" id="enquiryChoice3" name="enquiry" value="other-enquiry" />
-                            <label for="enquiryChoice3">Other</label>
+                            <input type="radio" id="enquiryChoice4" name="enquiry" value="other-enquiry">
+                            <label for="enquiryChoice4">Other</label>
                             <p id="enquiryMessage">Please select the nature of your enquiry.</p>
-
                         </fieldset>
                             <br>
                         <button type="submit">Submit</button>
@@ -117,6 +114,11 @@
         </div>
     </section>
 </main>
+<footer>
+    <p class="body-font">
+        © Phoebe Hames & Fran Stephens
+       </p> 
+</footer>
 
     <script src="script.js"></script>
 </body>
