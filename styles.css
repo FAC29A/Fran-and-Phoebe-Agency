@@ -100,7 +100,8 @@ section {
     color: (--light);
     padding-top: 50px;
     text-align: center;
-    background-color: var(--mid-light);}
+    background-color: var(--mid-light);
+}
 
 .full-para {
     padding-left: 30px;
