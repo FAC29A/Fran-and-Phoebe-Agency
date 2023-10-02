@@ -80,8 +80,7 @@ section {
     color: (--light);
     padding-top: 50px;
     text-align: center;
-    background-image: linear-gradient(var(--dark-grey), var(--medium), var(--mid-light),   var(--light), var(--extra-light));
-}
+    background-color: var(--mid-light);}
 
 .full-para {
     padding-left: 30px;
@@ -115,8 +114,8 @@ nav {
     align-items: flex-end;
     padding-right: 10px;
     padding-left: 10px;
-    padding-top: 20px;
-    padding-bottom: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     z-index: 1;
     background-color: var(--dark-green-clear);
     border-bottom: var(--dark-green-solid) solid 1px;
