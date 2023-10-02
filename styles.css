@@ -21,6 +21,7 @@
 
 body {
     margin: 0;
+    background-color: var(--mid-light);
 }
 
 /* Utility Classes */
@@ -87,12 +88,7 @@ section {
     color: (--light);
     padding-top: 50px;
     text-align: center;
-<<<<<<< Updated upstream
     background-color: var(--mid-light);}
-=======
-    background-color: var(--light)
-}
->>>>>>> Stashed changes
 
 .full-para {
     padding-left: 30px;
@@ -249,6 +245,10 @@ fieldset {
     max-width: 25rem;
     margin-left: auto;
     margin-right: auto;
+}
+
+footer {
+    padding-left: 20px;
 }
 
 @media only screen and (max-width: 530px){
