@@ -78,7 +78,24 @@ h3 {
     width: 10rem;
     height: 3rem;
     font-size: 2rem;
+    border-radius: 5px;
+    background-color: var(--extra-light);
 }
+
+.enter:hover {
+    cursor: pointer;
+    background-color: var(--dark-green-solid);
+    color: var(--extra-light);
+    border: solid var(--extra-light);
+    transition: 250ms all ease-in-out;
+}
+
+.button-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+
 section {
     height: 100vh;
     color: (--light);
