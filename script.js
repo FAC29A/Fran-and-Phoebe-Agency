@@ -61,13 +61,13 @@ function createMemberCard(img, alt, fullName,role,quote) {
   memberImage.alt = alt;
   const memberName = document.createElement('p');
   memberName.innerHTML= fullName;
-  memberName.className = "light member-name";
+  memberName.className = " member-name";
   const memberRole = document.createElement('p');
   memberRole.innerHTML= role;
-  memberRole.className = "light member-role";
+  memberRole.className = " member-role";
   const memberQuote = document.createElement('q');
   memberQuote.innerHTML= quote;
-  memberQuote.className = "light member-role member-quote hover-appear";
+  memberQuote.className = " member-role member-quote hover-appear";
   //append each part of the card to the card
   memberCard.append(memberImage,memberName,memberRole,memberQuote);
 

@@ -12,26 +12,35 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Rye&display=swap" rel="stylesheet">
+
     <title>The Agency</title>
-</head>
-<body>
-   <main> 
+  </head>
+  <body>
+    <main>
       <nav>
-        <a href="#home"><img src="./images/strange-logo.png" alt="Strange Talents Logo, click for home page" class="small-screen-invisible"></a>
+        <a href="#home"
+          ><img
+            src="./images/strange-logo.png"
+            alt="Strange Talents Logo, click for home page"
+            class="small-screen-invisible"
+        /></a>
         <div class="nav-links">
-            <a href="#about">About</a>
-            <a href="#theTeam">The Team</a>
-            <a href="#contact">Contact</a>
+          <a href="#about">About</a>
+          <a href="#theTeam">The Team</a>
+          <a href="#contact">Contact</a>
         </div>
-    </nav>
-    <section id="home"> 
-    <div class="heading-intro">Enter the wonderful world of </div>
+      </nav>
+      <section id="home">
+        <div class="heading-intro">Enter the wonderful world of</div>
         <h1>STRANGE Talents</h1>
-        <button class="enter" id="enter"><a href="#about" class="button-link">Enter</a></button>
-    </section>
-    
-    <section id="about">
+        <button class="enter" id="enter">
+          <a href="#about" class="button-link">Enter</a>
+        </button>
+      </section>
+
+      <section id="about">
         <h2>About Us</h2>
+
           <div class="about-text-container">
             <p class="stack-md full-para about-text">
                 🎩✨ Welcome to the most extraordinary of all talent agencies! At Strange Talents, we proudly represent the marvels of the uncommon, the masters of the peculiar, and the virtuosos of the bizarre. 
@@ -50,14 +59,48 @@
         <img src="./images/womanClown.png" class="background-image" alt="null">
     </section>
 
-    <section id="theTeam">
-        <h2>Meet the Team</h2>
-        <div class="team-grid-container" id="team-grid-container"></div>
-    </section>
+        <p class="stack-md full-para about-text">
+          🎩✨ Welcome to the most extraordinary of all talent agencies! At
+          Strange Talents, we proudly represent the marvels of the uncommon, the
+          masters of the peculiar, and the virtuosos of the bizarre.
+        </p>
+        <p class="stack-md full-para about-text">
+          Our founders Edna and Belinda opened their doors in 2012, both
+          bringing their own unique talents; Belinda's measured approach
+          counterabalances Edna's boundless ability to see all the world has to
+          offer and along with their immaculate staff, the service they bring is
+          unparalleled.
+        </p>
+        <p class="stack-md full-para about-text">
+          Our roster includes individuals fluent in the enchanting tongue of
+          Elvish, daredevils wielding beards as lassos, and enigmatic souls
+          defying gravity, walking on fingernails alone.
+        </p>
+        <p class="stack-md full-para about-text">
+          We are the purveyors of the outlandish, the champions of the
+          wonderfully weird, and the gatekeepers to a realm where the
+          extraordinary is to be expected.
+        </p>
 
-    <section id="contact">
+        <img
+          src="./images/womanClown.png"
+          class="background-image"
+          alt="null"
+        />
+      </section>
+
+      <section id="theTeam" class="stack-md">
+        <h2>Meet the Team</h2>
+        <p>Hover to discover what we have to say! 👇</p>
+        <br />
+        <div class="team-grid-container" id="team-grid-container"></div>
+      </section>
+
+      <section id="contact">
         <h2>Contact</h2>
         <div class="flex-row">
+
+
             <div class="flex-col">
                 <div>
                     <p class="body-font">Where to find us:</p>
@@ -78,49 +121,73 @@
                     </p>
                 </div>
 
+
             </div>
-            <div class="flex-col">
-                <div>
-                    <form class="stack-md" id="myForm">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
-                        <br>
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                        <br>
-                        <label for="message">Message:</label>
-                        <input type="text" id="message" name="message" required>
-                        <br><br>
-                        <fieldset class="stack-sm">
-                          <legend>Nature of your enquiry:</legend> 
-                          <br>
-                            <input type="radio" id="enquiryChoice1" name="enquiry" value="seeking-representation">
-                            <label for="enquiryChoice1">Seeking representation</label>
-                            <br>
-                            <input type="radio" id="enquiryChoice2" name="enquiry" value="performer-enquiry">
-                            <label for="enquiryChoice2">Enquiring about one of our performers</label>
-                            <br>
-                            <input type="radio" id="enquiryChoice3" name="enquiry" value="partnership-enquiry">
-                            <label for="enquiryChoice3">Looking to partner with us</label>
-                            <br>
-                            <input type="radio" id="enquiryChoice4" name="enquiry" value="other-enquiry">
-                            <label for="enquiryChoice4">Other</label>
-                            <p id="enquiryMessage">Please select the nature of your enquiry.</p>
-                        </fieldset>
-                            <br>
-                        <button type="submit">Submit</button>
-                       </form>
-                </div>
+          </div>
+          <div class="flex-col">
+            <div>
+              <form class="stack-md" id="myForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required />
+                <br />
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+                <br />
+                <label for="message">Message:</label>
+                <input type="text" id="message" name="message" required />
+                <br /><br />
+                <fieldset class="stack-sm">
+                  <legend>Nature of your enquiry:</legend>
+                  <br />
+                  <input
+                    type="radio"
+                    id="enquiryChoice1"
+                    name="enquiry"
+                    value="seeking-representation"
+                  />
+                  <label for="enquiryChoice1">Seeking representation</label>
+                  <br />
+                  <input
+                    type="radio"
+                    id="enquiryChoice2"
+                    name="enquiry"
+                    value="performer-enquiry"
+                  />
+                  <label for="enquiryChoice2"
+                    >Enquiring about one of our performers</label
+                  >
+                  <br />
+                  <input
+                    type="radio"
+                    id="enquiryChoice3"
+                    name="enquiry"
+                    value="partnership-enquiry"
+                  />
+                  <label for="enquiryChoice3">Looking to partner with us</label>
+                  <br />
+                  <input
+                    type="radio"
+                    id="enquiryChoice4"
+                    name="enquiry"
+                    value="other-enquiry"
+                  />
+                  <label for="enquiryChoice4">Other</label>
+                  <p id="enquiryMessage">
+                    Please select the nature of your enquiry.
+                  </p>
+                </fieldset>
+                <br />
+                <button type="submit">Submit</button>
+              </form>
             </div>
+          </div>
         </div>
-    </section>
-</main>
-<footer>
-    <p class="body-font">
-        © Phoebe Hames & Fran Stephens
-       </p> 
-</footer>
+      </section>
+    </main>
+    <footer>
+      <div class="body-font">© Phoebe Hames & Fran Stephens</div>
+    </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

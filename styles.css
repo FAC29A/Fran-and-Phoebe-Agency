@@ -1,14 +1,15 @@
 :root {
-    --extra-light:#fdfbf2; 
-    --light: #fdf3e0;
-    --mid-light: #ded5c4;
+    --extra-light-clear:rgba(244, 196, 41,0.2); 
+    --extra-light: rgb(242, 233, 205);
+    --light: #FFCC2A;
+    --mid-light: ;
     --medium: #c9b99c;
     --red: #cc2424;
     --dark-grey: #414040; 
-    --dark-red: #430100;
+    --pop: #1BB6BC;
     --green: #506C60;
-    --dark-green-clear: rgba(17, 37, 26, 0.6);
-    --dark-green-solid: rgba(17, 37, 26);
+    --dark-clear: rgba(109, 29, 58,0.6);
+    --dark-solid: #6D1D3A;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -21,7 +22,8 @@
 
 body {
     margin: 0;
-    background-color: var(--mid-light);
+    background-color: var(--extra-light-clear);
+    color: black;
 }
 
 /* Utility Classes */
@@ -45,7 +47,7 @@ body {
 }
 
 .light {
-    color: var(--light);
+    color: var(--extra-light);
 }
 
 .body-font {
@@ -84,7 +86,7 @@ h3 {
 }
 .enter:hover {
     cursor: pointer;
-    background-color: var(--dark-green-solid);
+    background-color: var(--pop);
     color: var(--extra-light);
     border: solid var(--extra-light);
     transition: 250ms all ease-in-out;
@@ -100,7 +102,7 @@ section {
     color: (--light);
     padding-top: 50px;
     text-align: center;
-    background-color: var(--mid-light);
+    background-color: var(--extra-light-clear);
 }
 
 .full-para {
@@ -109,8 +111,6 @@ section {
     text-align: left;
     width: 80vw;
     font-family: 'Lora', serif;
-    /* margin-left: auto;
-    margin-right: auto; */
 }
 
 /* Home */
@@ -124,7 +124,7 @@ section {
     font-size: 3rem;
     color: var(--extra-light);
     padding-top: 200px;
-    opacity: 80%;
+    opacity: 90%;
     font-family: 'Lora', serif;
 }
 
@@ -141,8 +141,8 @@ nav {
     padding-top: 10px;
     padding-bottom: 10px;
     z-index: 1;
-    background-color: var(--dark-green-clear);
-    border-bottom: var(--dark-green-solid) solid 1px;
+    background-color: var(--dark-clear);
+    border-bottom: var(--dark-solid) solid 1px;
     
 }
 
@@ -201,11 +201,12 @@ nav img{
 }
 
 .team-member {
-    background-color: var(--dark-red);
+    background-color: var(--pop);
     width: 16rem;
     height: 19rem;
     border-radius: 0.8rem;
     padding: 1rem;
+    border: dashed 0.25rem var(--light);
 }
 
 .team-grid-container img{
@@ -261,7 +262,9 @@ fieldset {
 }
 
 footer {
-    padding-left: 20px;
+    padding: 20px;
+    background-color: var(--dark-solid);
+    color: var(--extra-light);
 }
 
 /* Smallest screens */
