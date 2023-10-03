@@ -10,6 +10,13 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+//Background image fades in on load
+document.addEventListener('DOMContentLoaded', function() {
+  const background = document.getElementById('home');
+  background.style.opacity = '1';
+});
+
+
 //enter button scrolling:
   document.addEventListener('DOMContentLoaded', function() {
   const enter = document.getElementById('enter');

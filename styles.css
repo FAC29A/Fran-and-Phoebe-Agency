@@ -8,7 +8,7 @@
     --dark-red: #430100;
     --green: #506C60;
     --dark-green-clear: rgba(17, 37, 26, 0.6);
-    --dark-green-solid: rgba(17, 37, 26);
+    --dark-green-solid: rgb(17, 37, 26);
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -118,6 +118,9 @@ section {
 #home {
     background-image: url(images/hero1.png);
     background-size: cover;
+    opacity: 0;
+    transition: opacity 4s ease;
+    background-color: black;
 }
 
 .heading-intro {
@@ -206,6 +209,12 @@ nav img{
     height: 19rem;
     border-radius: 0.8rem;
     padding: 1rem;
+    box-shadow: 3px 3px 3px var(--dark-grey);
+    transition: transform 0.3s ease-in-out;
+}
+.team-member:hover {
+    transform: scale(1.2) translateY(-20px);
+    z-index: 2;
 }
 
 .team-grid-container img{
@@ -303,6 +312,10 @@ footer {
         display: block;
         overflow: scroll;
     }
+    .team-member:hover {
+        transform: none;
+        
+    }
 }
 
 @media (max-width: 750px) {
@@ -336,6 +349,10 @@ footer {
     }
     iframe {
         max-width: 80%;
+    }
+    .team-member:hover {
+        transform: none;
+        
     }
 }
 
