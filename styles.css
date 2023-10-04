@@ -196,7 +196,7 @@ nav img{
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     grid-template-rows: 1fr 1fr;
     max-height: 75vh;
-    width: 61rem;
+    max-width: 61rem;
     grid-gap: 1rem;
     margin-left: auto;
     margin-right: auto;
