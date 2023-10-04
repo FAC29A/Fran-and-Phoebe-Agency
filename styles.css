@@ -1,14 +1,15 @@
 :root {
-    --extra-light:#fdfbf2; 
-    --light: #fdf3e0;
-    --mid-light: #ded5c4;
+    --extra-light-clear:rgba(244, 196, 41,0.2); 
+    --extra-light: rgb(242, 233, 205);
+    --light: #FFCC2A;
+    --mid-light: ;
     --medium: #c9b99c;
     --red: #cc2424;
     --dark-grey: #414040; 
-    --dark-red: #430100;
+    --pop: #1BB6BC;
     --green: #506C60;
-    --dark-green-clear: rgba(17, 37, 26, 0.6);
-    --dark-green-solid: rgb(17, 37, 26);
+    --dark-clear: rgba(109, 29, 58,0.6);
+    --dark-solid: #6D1D3A;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -21,7 +22,8 @@
 
 body {
     margin: 0;
-    background-color: var(--mid-light);
+    background-color: var(--extra-light-clear);
+    color: black;
 }
 
 /* Utility Classes */
@@ -45,7 +47,7 @@ body {
 }
 
 .light {
-    color: var(--light);
+    color: var(--extra-light);
 }
 
 .body-font {
@@ -84,7 +86,7 @@ h3 {
 }
 .enter:hover {
     cursor: pointer;
-    background-color: var(--dark-green-solid);
+    background-color: var(--pop);
     color: var(--extra-light);
     border: solid var(--extra-light);
     transition: 250ms all ease-in-out;
@@ -100,7 +102,7 @@ section {
     color: (--light);
     padding-top: 50px;
     text-align: center;
-    background-color: var(--mid-light);
+    background-color: var(--extra-light-clear);
 }
 
 .full-para {
@@ -109,8 +111,6 @@ section {
     text-align: left;
     width: 80vw;
     font-family: 'Lora', serif;
-    /* margin-left: auto;
-    margin-right: auto; */
 }
 
 /* Home */
@@ -127,7 +127,7 @@ section {
     font-size: 3rem;
     color: var(--extra-light);
     padding-top: 200px;
-    opacity: 80%;
+    opacity: 90%;
     font-family: 'Lora', serif;
 }
 
@@ -144,8 +144,8 @@ nav {
     padding-top: 10px;
     padding-bottom: 10px;
     z-index: 1;
-    background-color: var(--dark-green-clear);
-    border-bottom: var(--dark-green-solid) solid 1px;
+    background-color: var(--dark-clear);
+    border-bottom: var(--dark-solid) solid 1px;
     
 }
 
@@ -204,7 +204,7 @@ nav img{
 }
 
 .team-member {
-    background-color: var(--dark-red);
+    background-color: var(--pop);
     width: 16rem;
     height: 19rem;
     border-radius: 0.8rem;
@@ -215,6 +215,7 @@ nav img{
 .team-member:hover {
     transform: scale(1.1) translateY(-20px);
     z-index: 2;
+    border: dashed 0.25rem var(--light);
 }
 
 .team-grid-container img{
@@ -270,10 +271,13 @@ fieldset {
 }
 
 footer {
-    padding-left: 20px;
+    padding: 20px;
+    background-color: var(--dark-solid);
+    color: var(--extra-light);
 }
 
-@media only screen and (max-width: 530px){
+/* Smallest screens */
+@media only screen and (max-width: 529px){
     nav a{
         font-size: 1rem;
     }
@@ -298,7 +302,7 @@ footer {
         grid-gap: 1rem;
         margin-left: auto;
         margin-right: auto;
-        overflow: scroll;
+        /* overflow: scroll; */
     }
 
     .team-member {
@@ -310,24 +314,44 @@ footer {
 
     .flex-row {
         display: block;
+        /* overflow: scroll; */
+    }
+    .about-text{
+      font-size: 1.1rem;
+    }
+   
+    section {
         overflow: scroll;
     }
-    .team-member:hover {
-        transform: none;
-        
-    }
-}
 
-@media (max-width: 750px) {
+    .team-member:hover {
+        transform: none;    
+    }
     .small-screen-invisible {
         display: none;
     }
+    .background-image {
+        left: 0;
+        width: 100%; 
+        height: auto;
+    }
+    
+}
+
+/* @media (max-width: 750px) {
     iframe {
         max-width: 80%;
     }
-}
+    .small-screen-invisible {
+        display: none;
+    }
+} */
 
+/* mid-small screens */
 @media (max-width: 900px) and (min-width: 530px) {
+    section {
+        overflow: scroll;
+    }
     nav a{
         font-size: 1.5rem;
     }
@@ -344,20 +368,24 @@ footer {
     .enter {
         font-size: 2rem;
     }
-    .team-grid-container {
-        overflow: scroll;
-    }
+
     iframe {
         max-width: 80%;
     }
-    .team-member:hover {
-        transform: none;
-        
+    .small-screen-invisible {
+        display: none;
     }
+    
+    .about-text{
+        font-size: 1.1rem;
+      }
 }
 
+/* Shallow containers */
 @media (max-height: 820px){
-
+    section {
+        overflow: scroll;
+    }
     .team-member {
         width: 13rem;
         height: 16rem;
@@ -371,12 +399,15 @@ footer {
         overflow: hidden;
         border-radius: 0.8rem;
     }
-    .team-grid-container {
-        overflow: scroll;
+    
+    .about-text {
+        font-size: 1.2rem;
+        
     }
 
 }
 
+/* large screens */
 @media (min-width: 1000px){
     .team-grid-container {
         grid-template-columns: 1fr 1fr 1fr;
