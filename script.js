@@ -1,35 +1,40 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const navLinks = document.querySelectorAll('nav a');
+//Background image fades in on page load
 
-    navLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
-            e.preventDefault();
-            const targetSection = document.querySelector(link.getAttribute('href'));
-            targetSection.scrollIntoView({ behavior: 'smooth' });
-        });
-    });
-});
-
-//Background image fades in on load
-document.addEventListener('DOMContentLoaded', function() {
+function loadHero() {
   const background = document.getElementById('home');
   background.style.opacity = '1';
-});
+};
 
+loadHero();
 
-//enter button scrolling:
-  document.addEventListener('DOMContentLoaded', function() {
-  const enter = document.getElementById('enter');
+// Page scrolls smoothly when nav links are clicked
+function scrollSmoothly() {
+  const navLinks = document.querySelectorAll('nav a');
 
-  enter.addEventListener('click', (e) => {
+  navLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+          e.preventDefault();
+          const targetSection = document.querySelector(link.getAttribute('href'));
+          targetSection.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  };
+
+scrollSmoothly();
+
+// Page scrolls smoothly when enter button clicked:
+  function eventSmoothScroll(){
+     const enter = document.getElementById('enter');
+     enter.addEventListener('click', (e) => {
           e.preventDefault();
           const targetSection2 = document.getElementById('about');
           targetSection2.scrollIntoView({ behavior: 'smooth' });
       });
-    })
+  }
+   
+eventSmoothScroll();
 
-
-//form validation
+//Function to ensure at least 1 radio option selected: 
   const myForm = document.getElementById("myForm");
   const alert = document.getElementById("enquiryMessage")
 
@@ -48,18 +53,12 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
-// create member cards
-// container for all the cards
+// This section creates member cards!
 
-document.addEventListener('DOMContentLoaded', function () {
-  // Your JavaScript code here
-  const cardContainer = document.getElementById('team-grid-container');
+// Gets element container for all the cards
+const cardContainer = document.getElementById('team-grid-container');
   
-  // Define the createMemberCard function and the 'members' array here
-  
- 
-
-//this creates 1 card
+//This function creates 1 card
 function createMemberCard(img, alt, fullName,role,quote) {
   const memberCard = document.createElement('div');
   memberCard.className = "team-member center";
@@ -75,13 +74,14 @@ function createMemberCard(img, alt, fullName,role,quote) {
   const memberQuote = document.createElement('q');
   memberQuote.innerHTML= quote;
   memberQuote.className = " member-role member-quote hover-appear";
-  //append each part of the card to the card
+  // This appends each part of the card to the card
   memberCard.append(memberImage,memberName,memberRole,memberQuote);
 
-  // append each card to the container div
+  // This appends each card to the container div
   cardContainer.append(memberCard);
 };
 
+// This is the members info for each card (used in the function above)
 const members = [
   {
     img: "./images/woman-scales.jpeg",
@@ -129,12 +129,9 @@ const members = [
 
 ];
 
+//For...of loop loops through the members object and creates a member card for each person
 for (const member of members) {
   createMemberCard(member.img, member.alt, member.fullName, member.role, member.quote);
 }
-});
 
-// for (const member of members) {
-//   createMemberCard(member.img, member.alt, member.fullName, member.role, member.quote);
-// }
 
