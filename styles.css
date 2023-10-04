@@ -8,7 +8,7 @@
     --dark-grey: #414040; 
     --pop: #1BB6BC;
     --green: #506C60;
-    --dark-clear: rgba(109, 29, 58,0.6);
+    --dark-clear: rgba(109, 29, 58,0.85);
     --dark-solid: #6D1D3A;
     padding: 0;
     margin: 0;
@@ -17,7 +17,6 @@
 
 * {
     font-family: 'Rye', cursive;
-    
 }
 
 body {
@@ -196,8 +195,8 @@ nav img{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     grid-template-rows: 1fr 1fr;
-    max-height: 80vh;
-    max-width: 70rem;
+    max-height: 75vh;
+    max-width: 61rem;
     grid-gap: 1rem;
     margin-left: auto;
     margin-right: auto;
@@ -205,26 +204,30 @@ nav img{
 
 .team-member {
     background-color: var(--pop);
-    width: 16rem;
-    height: 19rem;
+    width: 15rem;
+    height: 18rem;
     border-radius: 0.8rem;
     padding: 1rem;
     box-shadow: 3px 3px 3px var(--dark-grey);
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.5s linear;
+    border: dashed 0.4rem var(--light);
 }
 .team-member:hover {
     transform: scale(1.1) translateY(-20px);
     z-index: 2;
-    border: dashed 0.25rem var(--light);
 }
 
 .team-grid-container img{
     max-width: 10.5rem;
-    max-height: 13rem;
+    max-height: 12rem;
     overflow: hidden;
     border-radius: 0.8rem;
 }
 
+#theTeam h2 {
+    padding-top: 0.5rem;
+    line-height: 0.5rem;
+}
 
 .member-name {
     margin-bottom: 5px;
@@ -265,7 +268,7 @@ label, input {
 }
 
 fieldset {
-    max-width: 25rem;
+    width: 23rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -282,10 +285,116 @@ svg {
     padding-left: 1rem;
     padding-right: 1rem;
 }
+
+/* Galaxy fold- extra small screen! */
+
+@media only screen and (max-width: 281px){
+    nav {
+        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
+        padding-right: 2px;
+        padding-left: 2px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        
+    }
+    
+    nav a{
+        font-size: 0.9rem;
+        padding-right: 1rem;
+    }
+    .heading-intro {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+        margin-top: 20px;
+    }
+    
+    .enter {
+        font-size: 1.5rem;
+    }
+    
+    .team-grid-container {
+        display: block;
+        max-height: 80vh;
+        width: 90vw;
+        grid-gap: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+    .team-member {
+        margin-bottom: 1rem;
+        border: dashed 0.25rem var(--light);
+    }
+    iframe {
+        max-width: 80%;
+    }
+
+    .flex-row {
+        display: block;
+        /* overflow: scroll; */
+    }
+    .about-text{
+      font-size: 0.8rem;
+    }
+   
+    section {
+        overflow: scroll;
+    }
+
+    .small-screen-invisible {
+        display: none;
+    }
+    .background-image {
+        left: 0;
+        width: 100%; 
+        height: auto;
+    }
+
+    .member-quote {
+        font-family: 'Lora', serif;
+    }
+
+    .team-member:hover {
+        transform: none;    
+    }
+    
+    .hover-appear {
+        opacity: 100%;
+        transition: none;
+    }
+    fieldset {
+        width: 80vw;
+    }
+
+    footer {
+        font-size: 0.8rem;;
+    }
+    
+}
+
 /* Smallest screens */
-@media only screen and (max-width: 529px){
+@media only screen and (max-width: 540px) and (min-width: 282px){
+    nav {
+        
+        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
+        padding-right: 5px;
+        padding-left: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        
+    }
+    
     nav a{
         font-size: 1rem;
+        padding-right: 30px;
     }
 
     .heading-intro {
@@ -313,6 +422,7 @@ svg {
 
     .team-member {
         margin-bottom: 1rem;
+        border: dashed 0.25rem var(--light);
     }
     iframe {
         max-width: 80%;
@@ -340,27 +450,29 @@ svg {
         left: 0;
         width: 100%; 
         height: auto;
-    }
-   
+    }   
     svg {
         padding-left: 0rem;
         padding-right: 0rem;
         width: 1.5rem;
         height: auto;
     }
+    .member-quote {
+        font-family: 'Lora', serif;
+    }
+    
+    .hover-appear {
+        opacity: 100%;
+        transition: none;
+    }
+    fieldset {
+        width: 20rem;
+    }
+    
 }
 
-/* @media (max-width: 750px) {
-    iframe {
-        max-width: 80%;
-    }
-    .small-screen-invisible {
-        display: none;
-    }
-} */
-
 /* mid-small screens */
-@media (max-width: 900px) and (min-width: 530px) {
+@media (max-width: 950px) and (min-width: 541px) {
     section {
         overflow: scroll;
     }
@@ -384,14 +496,30 @@ svg {
     iframe {
         max-width: 80%;
     }
-    .small-screen-invisible {
+    #theTeam .small-screen-invisible {
         display: none;
-    }
+    } 
     
     .about-text{
         font-size: 1.1rem;
       }
-    
+      .team-grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .team-member {
+        border: dashed 0.25rem var(--light);
+    }
+    .hover-appear {
+        opacity: 100%;
+        transition: none;
+    }
+    .background-image {
+        left: 0;
+        width: 100%; 
+        height: auto;
+    }
 }
 
 /* Shallow containers */
