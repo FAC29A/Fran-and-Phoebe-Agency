@@ -373,7 +373,14 @@ svg {
     }
 
     footer {
-        font-size: 0.8rem;;
+        font-size: 0.7rem;
+        padding: 0.6rem;
+    }
+    svg {
+        padding-left: 0rem;
+        padding-right: 0rem;
+        width: 1rem;
+        height: auto;
     }
     
 }
