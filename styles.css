@@ -118,6 +118,9 @@ section {
 #home {
     background-image: url(images/hero1.png);
     background-size: cover;
+    opacity: 0;
+    transition: opacity 4s ease;
+    background-color: black;
 }
 
 .heading-intro {
@@ -206,6 +209,12 @@ nav img{
     height: 19rem;
     border-radius: 0.8rem;
     padding: 1rem;
+    box-shadow: 3px 3px 3px var(--dark-grey);
+    transition: transform 0.3s ease-in-out;
+}
+.team-member:hover {
+    transform: scale(1.1) translateY(-20px);
+    z-index: 2;
     border: dashed 0.25rem var(--light);
 }
 
@@ -314,6 +323,10 @@ footer {
     section {
         overflow: scroll;
     }
+
+    .team-member:hover {
+        transform: none;    
+    }
     .small-screen-invisible {
         display: none;
     }
@@ -366,7 +379,6 @@ footer {
     .about-text{
         font-size: 1.1rem;
       }
-
 }
 
 /* Shallow containers */
@@ -402,3 +414,5 @@ footer {
         grid-template-rows: 1fr 1fr;
     }
 }
+
+
