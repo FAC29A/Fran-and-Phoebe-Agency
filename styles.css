@@ -17,7 +17,6 @@
 
 * {
     font-family: 'Rye', cursive;
-    
 }
 
 body {
@@ -196,8 +195,8 @@ nav img{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     grid-template-rows: 1fr 1fr;
-    max-height: 80vh;
-    max-width: 70rem;
+    max-height: 75vh;
+    width: 61rem;
     grid-gap: 1rem;
     margin-left: auto;
     margin-right: auto;
@@ -225,6 +224,10 @@ nav img{
     border-radius: 0.8rem;
 }
 
+#theTeam h2 {
+    padding-top: 0.5rem;
+    line-height: 0.5rem;
+}
 
 .member-name {
     margin-bottom: 5px;
