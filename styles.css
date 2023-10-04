@@ -213,7 +213,7 @@ nav img{
     transition: transform 0.3s ease-in-out;
 }
 .team-member:hover {
-    transform: scale(1.2) translateY(-20px);
+    transform: scale(1.1) translateY(-20px);
     z-index: 2;
 }
 
@@ -383,3 +383,5 @@ footer {
         grid-template-rows: 1fr 1fr;
     }
 }
+
+
