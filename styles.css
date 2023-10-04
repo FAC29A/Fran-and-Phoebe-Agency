@@ -1,6 +1,6 @@
 :root {
     --extra-light-clear:rgba(244, 196, 41,0.2); 
-    --extra-light: rgb(242, 233, 205);
+    --extra-light: #f2e9cd;
     --light: #FFCC2A;
     --mid-light: ;
     --medium: #c9b99c;
@@ -277,6 +277,13 @@ footer {
     padding: 20px;
     background-color: var(--dark-solid);
     color: var(--extra-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+svg {
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 /* Galaxy fold- extra small screen! */
@@ -371,9 +378,6 @@ footer {
     
 }
 
-
-
-
 /* Smallest screens */
 @media only screen and (max-width: 540px) and (min-width: 282px){
     nav {
@@ -446,8 +450,13 @@ footer {
         left: 0;
         width: 100%; 
         height: auto;
+    }   
+    svg {
+        padding-left: 0rem;
+        padding-right: 0rem;
+        width: 1.5rem;
+        height: auto;
     }
-
     .member-quote {
         font-family: 'Lora', serif;
     }
@@ -494,7 +503,6 @@ footer {
     .about-text{
         font-size: 1.1rem;
       }
-
       .team-grid-container {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
